@@ -1,0 +1,13 @@
+<template name="message">
+		{{#if isSender sender}}
+			<div class="text" style="margin-right:30px; float:right;">
+				<strong>{{getUsername(sender)}}</strong> - {{text}}<br>
+				<i style="font-size:10px">{{displayTime(sendAt)}}</i><br>
+			</div>
+		{{else}}
+			<div class="text" style="margin-left:30px;">
+				<strong>{{getUsername(sender)}}</strong> - {{text}}<br>
+				<i style="font-size:10px">{{displayTime(sendAt)}}</i><br>
+			</div>
+		{{/if}}
+</template>

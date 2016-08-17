@@ -1,0 +1,43 @@
+<body>
+  <div class="container">
+    <div id="row-container" class="row">
+      <div id="friends-list" class="sm-side col-md-3" style="position:relative">
+        <div class="user-head">
+            <img class="inbox-avatar" src="/image/default.png">
+            {{> loginButtons}}
+        </div>
+        <form>
+        <ul class="inbox-nav inbox-divider">
+          {{#each friends}}
+          <li>
+            <a class="friend" id={{_id}}>
+              <img class="friend-list-avatar" src="/image/default.png">{{username}}
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+        </form>
+      </div>
+
+      <div class="lg-side col-md-9">
+        <div id="chat-header" class="inbox-head">
+          <img class="inbox-avatar" src="/image/default.png">
+          <h1 id="friend-name">Friend Name</h1>
+        </div>
+
+
+        {{#if currentUser}}
+        <div id="chat-window" style="overflow: auto; position:relative; border: #e7e7e7 solid 1px;">
+          {{#each messages}}
+            {{> message}}
+          {{/each}}
+        </div>
+        <form class="new-message">
+          <input type="text" name="text" placeholder="Type your message" autocomplete="off"/>
+          <input type="hidden" name="receiver" id="receiver">
+        </form>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</body>

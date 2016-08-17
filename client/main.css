@@ -1,0 +1,226 @@
+.sm-side {
+    padding: 0 0 0 10px;
+    background: none repeat scroll 0 0 #d5d7de;
+}
+.lg-side {
+    padding: 0;
+    background: none repeat scroll 0 0 #fff;
+}
+.sm-side .user-head {
+    background: none repeat scroll 0 0 #00a8b3;
+    color: #fff;
+    min-height: 80px;
+    padding: 10px;
+}
+.inbox-avatar {
+    float: left;
+    margin: 0 0 0 10px; 
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.friend-list-avatar {
+    float: left;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.inbox-head {
+    background: #d0edf5;
+    padding: 10px 15px 15px 15px;
+    position: relative;
+    background: none repeat scroll 0 0 #41cac0;
+    color: #fff;
+    height: 80px;
+    border-left: #00a8b3 solid 1px;
+}
+.inbox-head h1 {
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px 0 0 20px;
+    float: left;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.inbox-head .sr-input {
+    border: medium none;
+    border-radius: 4px 0 0 4px;
+    box-shadow: none;
+    color: #8a8a8a;
+    float: left;
+    height: 40px;
+    padding: 0 10px;
+}
+.inbox-head .sr-btn {
+    background: none repeat scroll 0 0 #00a6b2;
+    border: medium none;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    height: 40px;
+    padding: 0 20px;
+}
+.inbox-nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.inbox-divider {
+    border-bottom: 1px solid #d5d8df;
+    background: none repeat scroll 0 0 #e5e8ef;
+}
+.inbox-nav li {
+    display: inline-block;
+    line-height: 50px;
+    width: 100%;
+}
+.inbox-nav li a {
+    color: #6a6a6a;
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 10px;
+    width: 100%;
+}
+.inbox-nav li a:hover {
+    background: #d5d9de;
+    text-decoration: none;
+}
+.clicked {
+    background: #d5d9de;
+    text-decoration: none;
+}
+.inbox-nav li a i {
+    color: #6a6a6a;
+    font-size: 16px;
+    padding-right: 10px;
+}
+.inbox-nav li a span.label {
+    margin-top: 13px;
+}
+.user-head .user-name {
+    display: inline-block;
+    margin: -3px 0 0 10px;
+}
+.user-head .user-name h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.user-head .user-name h3 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-head .user-name h3 a:hover {
+    color: #d5d9de;
+}
+
+.text {
+    display: block;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.new-message {
+    height:50px; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0px;
+    background-color: white;
+    border: #e7e7e7 solid 1px;
+}
+
+.new-message input {
+    color: black;
+    border: none;
+    background:#fff;
+    padding-right: 80px;
+    font-size: 1em;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+ 
+.new-message input:focus{
+    outline: 0;
+    background: #eee;
+}
+ 
+.container {
+    padding: 0;
+    margin: 0 auto;
+    min-height: 100%;
+    background: white;
+    width: 100%;
+}
+
+a.account-dropdown {
+    background: none repeat scroll 0 0 #80d3d9;
+    border-radius: 2px;
+    color: #01a7b3;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 3px 5px;
+}
+
+body {
+    font-family: sans-serif;
+    background-attachment: fixed;
+ 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ 
+    padding: 0;
+    margin: 0;
+ 
+    font-size: 14px;
+}
+ 
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 1em;
+}
+ 
+li {
+    position: relative;
+    list-style: none;
+}
+ 
+#login-buttons {
+    display: block;
+    margin-top: 10px;
+}
+#login-buttons .login-link-text {
+    margin-left: 20px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#row-container {
+    margin-right:0 !important;
+}
+ 
+@media (max-width: 600px) {
+    li {
+        padding: 12px 15px;
+    }
+ 
+    .search {
+        width: 150px;
+        clear: both;
+    }
+ 
+    .new-task input {
+        padding-bottom: 5px;
+    }
+}/* CSS declarations go here */
